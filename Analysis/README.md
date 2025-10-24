@@ -34,6 +34,8 @@ AdamW 則引入 **權重衰減 (weight decay)**，在理論上能改善長期穩
 探討這些超參數設定對學習表現與穩定度的影響。
 
 ## 數據分析結果：
+- 藍色代表使用Adam （深色：τ = 0.005, 淺色：τ = 0.002）
+- 橘色代表使用AdamW（深色：τ = 0.005, 淺色：τ = 0.002）
 ![Reward Comparison](../Data/reward_comparison.png)
 ![Step Comparison](../Data/steps_comparison.png)
 ### 最後 100 回合統計
