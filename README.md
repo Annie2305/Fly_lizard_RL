@@ -95,7 +95,4 @@ Episode, Steps, Foods, C1, C2, Eat, Actor, Alpha, Reward, EatEps, PRBBeta, Stuck
 ## 分析與結果
 
 完整數據與統計分析可見於 [`Analysis/README.md`](./Analysis/README.md)，  
-包含：
-- Reward 收斂曲線  
-- 平均 Reward 與標準差  
-- ANOVA 及兩兩比較  
+ 
