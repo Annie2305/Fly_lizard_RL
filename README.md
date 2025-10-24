@@ -14,7 +14,7 @@
 ---
 
 ## 專案架構
-'''FLY_LIZARD_RL/
+FLY_LIZARD_RL/
 │
 ├── fly_lizard_RL.py # 主程式（包含環境與模型訓練）
 ├── README.md # 專案說明（本文件）
@@ -29,7 +29,6 @@
 ├── data_analysis.ipynb
 ├── stats_analysis.ipynb
 └── README.md
-'''
 
 ---
 
