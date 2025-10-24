@@ -35,7 +35,7 @@ AdamW 則引入 **權重衰減 (weight decay)**，在理論上能改善長期穩
 
 ## 數據分析結果：
 ![Reward Comparison](../Data/reward_comparison.png)
-![Step Comparison](../Data/step_comparison.png)
+![Step Comparison](../Data/steps_comparison.png)
 ### 最後 100 回合統計
 | 版本 | Optimizer | τ | 平均獎勵 | 平均步數 | 平均食物數 | Reward Std | Steps Std |
 |------|------------|----|-----------|------------|--------------|-------------|-------------|
@@ -55,6 +55,7 @@ AdamW 則引入 **權重衰減 (weight decay)**，在理論上能改善長期穩
 ## 統計結果：
 
 ![Steps Rolling Mean](../Data/steps_rolling_mean.png)
+
 Steps | ANOVA (K=100, window=20)
 F = 57.280, p = 0.000000
 
@@ -79,6 +80,7 @@ F = 57.280, p = 0.000000
 ---
 
 ![Reward Rolling Mean](../Data/reward_rolling_mean.png)
+
 Reward | ANOVA (K=100, window=20)
 F = 15.055, p = 0.000000
 
@@ -104,11 +106,11 @@ Pairwise t-tests :
 - AdamW 的權重衰減與小 τ 的組合在短期內可達最高報酬，但仍伴隨較大波動。
 
 ## 未來可調整方向
-1. 多種隨機種子（multi-seed）
+1. 多種隨機種子（multi-seed）：
 例如跑 5–10 個 seeds，可過濾單次訓練的運氣因素，評估是否可複現 v4 的優勢。
-2. 延長訓練（更多 episodes）
+2. 延長訓練（更多 episodes）：
 將 400 延長至 800/1000，觀察是否出現長期分化或最終穩態差異。
-3. 敏感度分析
+3. 敏感度分析：
 檢查 MA window（10/20/30）對結論是否穩健；若不同 window 結論一致，可信度更高。
-4. 優化進食策略模型
+4. 優化進食策略模型：
 調整DQN的超參數或是增加不同進食機制，以更貼近真實生物間的互動。
