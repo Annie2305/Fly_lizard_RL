@@ -13,25 +13,6 @@
 
 ---
 
-## 專案架構
-FLY_LIZARD_RL/
-│
-├── fly_lizard_RL.py # 主程式（包含環境與模型訓練）
-├── README.md # 專案說明（本文件）
-│
-├── Data/ # 訓練結果（每個版本的 CSV 檔）
-│ ├── v1_tau005_adam.csv
-│ ├── v2_tau002_adam.csv
-│ ├── v3_tau005_adamW.csv
-│ └── v4_tau002_adamW.csv
-│
-└── Analysis/ # 資料分析與圖表
-├── data_analysis.ipynb
-├── stats_analysis.ipynb
-└── README.md
-
----
-
 ## 專案目標
 讓智能體（蒼蠅）能在模擬環境中自我學習以下能力：
 1. 維持能量並盡量延長生存時間  
